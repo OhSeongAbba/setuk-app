@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나만의 교과세특 생성기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🤖 나만의 교과세특 생성기</h1>
+    <p>선생님의 '마스터 통합 지침서'로 작동합니다.</p>
+
+    <form id="setuk-form">
+        <div>
+            <label for="ach_pdf">1. 성취수준/도움자료 PDF</label>
+            <input type="file" id="ach_pdf" name="ach_pdf" accept=".pdf" required>
+        </div>
+        <div>
+            <label for="rule_pdf">2. 학교생활기록부 기재요령 PDF</label>
+            <input type="file" id="rule_pdf" name="rule_pdf" accept=".pdf" required>
+        </div>
+        <div>
+            <label for="plan_pdf">3. 교과평가계획 PDF (예: 4-1.pdf)</label>
+            <input type="file" id="plan_pdf" name="plan_pdf" accept=".pdf" required>
+        </div>
+        <hr>
+        <div>
+            <label for="prompt_text">4. 프롬프트 (예: 국어, 4-1, 상)</label>
+            <input type="text" id="prompt_text" name="prompt_text" placeholder="과목명, 파일식별코드, 학생수준" required>
+        </div>
+        <button type="submit">AI 교과세특 생성하기</button>
+    </form>
+
+    <div id="loading">AI가 열심히 생성 중입니다... (최대 1~2분 소요)</div>
+    <pre id="result"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>
