@@ -26,7 +26,7 @@ document.getElementById('setuk-form').addEventListener('submit', async function(
         if (data.success) {
             resultDiv.textContent = data.text;
         } else {
-            resultDiv.textContent = '오류 발생: 'S + data.error;
+            resultDiv.textContent = '오류 발생: ' + data.error;
         }
 
     } catch (error) {
@@ -35,3 +35,4 @@ document.getElementById('setuk-form').addEventListener('submit', async function(
         loadingDiv.style.display = 'none';
     }
 });
+
