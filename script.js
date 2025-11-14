@@ -11,7 +11,7 @@ document.getElementById('setuk-form').addEventListener('submit', async function(
     // ------------------------------------------------------------------
     // [중요!] 'app.py'가 배포된 실제 인터넷 주소를 넣습니다. (2단계에서 만듦)
     // ------------------------------------------------------------------
-    const BACKEND_URL = 'https://your-setuk-app.onrender.com/generate'; // (예시 주소)
+    const BACKEND_URL = 'https://setuk-backend-app.onrender.com/generate';
     // ------------------------------------------------------------------
 
     try {
